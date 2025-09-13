@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraIA – Soluções em Bots de IA</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #1E1E2F;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            background: linear-gradient(135deg, #1E1E2F, #6B5BFF);
+            color: white;
+        }
+
+        .hero-text {
+            flex: 1 1 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #6B5BFF;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #5541cc;
+        }
+
+        .hero-image img {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 50px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+
+        /* Cases */
+        .cases {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .cases h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .cases-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .case-card {
+            background: #6B5BFF;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 280px;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 80px 50px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .contact button {
+            width: 150px;
+            align-self: center;
+            background: #6B5BFF;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #5541cc;
+        }
+
+        /* Footer */
+        footer {
+            background: #1E1E2F;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer .social a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer .social a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsivo */
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-image img {
+                margin-top: 30px;
+            }
+            .cards, .cases-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header / Hero -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>IntegraIA – Soluções em Bots de Inteligência Artificial</h1>
+            <p>Automatize processos, melhore a comunicação e transforme sua empresa com inteligência artificial.</p>
+            <a href="mailto:contato@integraia.com.br" class="btn">Fale Conosco</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500x300.png?text=Hero+Image" alt="Bots de IA">
+        </div>
+    </header>
+
+    <!-- Serviços / Funcionalidades -->
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/60.png?text=Icon1" alt="">
+                <h3>Criação de Bots Personalizados</h3>
+                <p>Desenvolvemos bots sob medida para atender às necessidades do seu negócio.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60.png?text=Icon2" alt="">
+                <h3>Automação de Processos</h3>
+                <p>Otimize tarefas repetitivas e aumente a produtividade da sua equipe.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60.png?text=Icon3" alt="">
+                <h3>Consultoria em IA</h3>
+                <p>Orientação estratégica para integrar inteligência artificial de forma eficiente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases / Benefícios -->
+    <section class="cases">
+        <h2>Por que escolher a IntegraIA?</h2>
+        <div class="cases-cards">
+            <div class="case-card">
+                <h3>Rápido Retorno</h3>
+                <p>Implemente soluções de IA e veja resultados em pouco tempo.</p>
+            </div>
+            <div class="case-card">
+                <h3>Suporte Premium</h3>
+                <p>Equipe disponível para auxiliar em todas as etapas do projeto.</p>
+            </div>
+            <div class="case-card">
+                <h3>Tecnologia de Ponta</h3>
+                <p>Utilizamos as melhores ferramentas e técnicas de IA do mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contact">
+        <h2>Entre em contato</h2>
+        <form action="mailto:contato@integraia.com.br" method="post" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 IntegraIA. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#">LinkedIn</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
